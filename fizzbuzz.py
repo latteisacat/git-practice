@@ -19,5 +19,6 @@ etc -> num
         else:
             print(f'{i}')
 
+
 if __name__=='__main__':
     do_fizzbuzz(21)
