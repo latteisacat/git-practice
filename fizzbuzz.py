@@ -1,13 +1,23 @@
-def do_fizzbuzz():
+def do_fizzbuzz(num:int):
     print('hello')
 
 """
+
 3 -> fizz
 5 -> buzz
 15 -> fizzbuzz
 
-etc > num
+etc -> num
+
 """
 
+    for i in range(1, num+1):
+        if i%3 == 0:
+            print('fizz')
+        elif i%5==0:
+            print('buzz')
+        else:
+            print(f'{i}')
+
 if __name__=='__main__':
-    do_fizzbuzz()
+    do_fizzbuzz(21)
